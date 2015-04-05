@@ -4,12 +4,24 @@
   "description": "The main site of Alpaca Lab",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "Joel Yek",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.3.1",
     "express": "^4.12.3"
-  }
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joevo2/alpacalab"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
 }
