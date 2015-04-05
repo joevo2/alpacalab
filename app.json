@@ -1,0 +1,7 @@
+{
+  "name": "alpacalab",
+  "description": "The main site of Alpaca Lab",
+  "repository": "https://github.com/joevo2/alpacalab",
+  "logo": "https://aqueous-reaches-8528.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"]
+}
