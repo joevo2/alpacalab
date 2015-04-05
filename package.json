@@ -2,7 +2,7 @@
   "name": "alpacalab",
   "version": "0.0.1",
   "description": "The main site of Alpaca Lab",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
