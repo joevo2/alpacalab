@@ -6,4 +6,8 @@ module.exports = function(app) {
 	app.get('/pusheen', function (req, res) {
 		res.render('pusheen',{title:"Pusheen :3"});
 	})
+
+	app.get('/login', function (req, res) {
+		res.render('login',{title:"Login"});
+	})
 }
