@@ -9,6 +9,7 @@
   "author": "Joel Yek",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.12.2",
     "braintree": "^1.23.0",
     "ejs": "~2.3.1",
     "express": "~4.12.3"

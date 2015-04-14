@@ -3,6 +3,7 @@ var app = express();
 var braintree = require("braintree");
 
 require('./router/main')(app);
+require('./controllers/form')(app);
 
 //This is required for deployment in Heroku
 app.set('port', (process.env.PORT || 3000));
