@@ -2,8 +2,10 @@
 <html>
     <head>
         <% include header.ejs %>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/components/slideshow.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/components/slideshow.almost-flat.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/components/form-select.almost-flat.min.css" />
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/slideshow.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/form-select.min.js"></script>
     </head>
     <body>
     	<% include nav.ejs %>
@@ -40,7 +42,7 @@
 		    		<div class="uk-panel">
 		        		<article class="uk-article">
 						    <h1 class="uk-article-lead">Details</h1>
-						    <div class="uk-alert"><h3><b>RM69</b> Shipping and GST Included </h3></div>
+						    <div class="uk-alert"><b>RM69</b> Shipping and GST Included</div>
 			        		<div class="uk-alert uk-alert-warning">Currently only ship to <b>Malaysia</b>, for other shipment please email to 
 			        			<a href="mailto:joevo2@gmail.com?Subject=Pusheen%20Shiping" target="_top">us</a>
 			        		</div>
@@ -59,27 +61,40 @@
 		    	<!-- Payment panel -->
 		    	<div class="uk-width-medium-1-4">
 		    		<div class="uk-panel">
-		    			<h3 class="uk-panel-title">Choose your pusheen</h3>
-		    			<form class="uk-form" method="post">
+		    			<form class="uk-form uk-form-stacked" method="post">
 						    <fieldset data-uk-margin>
-						        <input type="email" placeholder="Email" name="email">
+						    	<legend>Get your pusheen now 😄</legend>
+						    	<input type="email" placeholder="Name" name="name" class="uk-width-1-1">
+						        <input type="email" placeholder="Email" name="email" class="uk-width-1-1">
+						        <input type="text" placeholder="Phone Number" name="phone" class="uk-width-1-1">
+						        <textarea cols="" rows="" placeholder="Address" class="uk-width-1-1" name="address"></textarea>
 						        <p class="uk-form-controls-condensed">Pusheen color combination</p>
-						        <select>
-						            <option>Grey</option>
-						            <option>White</option>
-						            <option>Black</option>
-						            <option>Pink</option>
-						            <option>Orange</option>
-						        </select>
-						        <select>
-						            <option>Grey</option>
-						            <option>White</option>
-						            <option>Black</option>
-						            <option>Pink</option>
-						            <option>Orange</option>
-						        </select>
+						        <div class="uk-button uk-form-select" data-uk-form-select>
+                                    <span></span>
+                                    <i class="uk-icon-caret-down"></i>
+                                    <select>
+                                        <option>Grey</option>
+							            <option>White</option>
+							            <option>Black</option>
+							            <option>Pink</option>
+							            <option>Orange</option>
+                                    </select>
+                                </div>
+                                <div class="uk-button uk-form-select" data-uk-form-select>
+                                    <span></span>
+                                    <i class="uk-icon-caret-down"></i>
+                                    <select>
+                                        <option>Grey</option>
+							            <option>White</option>
+							            <option>Black</option>
+							            <option>Pink</option>
+							            <option>Orange</option>
+                                    </select>
+                                </div>
 						    </fieldset>
-						    <input class="uk-button uk-button uk-button-primary uk-button-large" type="submit" value="Submit">
+						    <div class="uk-margin">
+						    	<input class="uk-button uk-button uk-button-primary uk-button-large" type="submit" value="Submit">
+							</div>
 						</form>
 		    		</div>
 
