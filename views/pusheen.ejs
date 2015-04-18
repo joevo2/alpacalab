@@ -17,7 +17,7 @@
 	<h1>Alpaca Mall</h1>
 	<div class="uk-grid" >
 		<!-- Pusheen panel -->
-		<div class="uk-width-medium-2-4">
+		<div class="uk-width-medium-2-4 uk-margin-bottom">
 			<div class="uk-panel">
 				<div data-uk-slideshow="{autoplay:true}">
 					<ul class="uk-slideshow">
@@ -61,30 +61,24 @@
 					</dl>
 				</article>
 			</div>
-			<div class="uk-grid uk-margin-top">
-				<div class="uk-width-1-4">
-					<!-- This is a button toggling the modal -->
-					<button class="uk-margin-top uk-button uk-button-large uk-button-primary" data-uk-modal="{target:'#my-id'}">Buy it now</button>
-					<!-- This is the modal -->
-					<div id="my-id" class="uk-modal">
-					    <div class="uk-modal-dialog">
-					        <a class="uk-modal-close uk-close"></a>
-					        <% include payment.ejs %>
-					    </div>
-					</div>
+			<!-- This is a button toggling the modal -->
+			<button class="uk-margin-top uk-button uk-button-large uk-button-primary" data-uk-modal="{target:'#my-id'}">Buy it now</button>
+			<!-- This is the modal -->
+			<div id="my-id" class="uk-modal">
+				<div class="uk-modal-dialog">
+					<a class="uk-modal-close uk-close"></a>
+					<% include payment.ejs %>
 				</div>
-				<div class="uk-width-2-4">
-					<div class="uk-panel">
-						<div class="uk-margin-top" data-uk-dropdown>
-						    <button class="uk-button uk-button uk-button-large"><b>RM65</b> Bank Deposit</button>
-						    <div class="uk-dropdown">
-						    	Maybank 114405116181 Joel Yek Zong Yong<br>
-						    	email proof of transaction to 
-						    	<a href="mailto:joevo2@gmail.com?Subject=Pusheen%20Payment" target="_top">joevo2@gmail.com</a>
-						    </div>
-						</div>
+			</div>
+			<div class="uk-panel">
+				<div class="uk-margin-top" data-uk-dropdown>
+					<button class="uk-button uk-button uk-button-large"><b>RM65</b> Bank Deposit</button>
+					<div class="uk-dropdown">
+						Maybank 114405116181 Joel Yek Zong Yong<br>
+						email proof of transaction to 
+						<a href="mailto:joevo2@gmail.com?Subject=Pusheen%20Payment" target="_top">joevo2@gmail.com</a>
 					</div>
-				</div>
+				</div>	
 			</div>
 		</div>  <!-- End of Detail pane -->
 	</div>
