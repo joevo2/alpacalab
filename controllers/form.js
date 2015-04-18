@@ -26,8 +26,5 @@ module.exports = function(app) {
 	            return res.render('pusheen',{title:"Pusheen :3"});
 		    });
 		};
-	    else {
-	    	
-	    }
 	});
 }
