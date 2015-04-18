@@ -2,7 +2,6 @@ var express =  require('express');
 var app = express();
 var braintree = require("braintree");
 
-require('newrelic');
 require('./router/main')(app);
 require('./controllers/form')(app);
 
