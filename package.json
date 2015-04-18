@@ -4,7 +4,8 @@
   "description": "The main site of Alpaca Lab",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "vows --spec"
   },
   "author": "Joel Yek",
   "license": "ISC",
