@@ -1,129 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <% include header.ejs %>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/components/slideshow.almost-flat.min.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/components/form-select.almost-flat.min.css" />
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/slideshow.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/form-select.min.js"></script>
-    </head>
-    <body>
-    	<% include nav.ejs %>
-    	<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
-    	   	<div class="uk-alert uk-alert-danger">Work in progress, not open for business yet 😛 </div>
-	    	<h1>Pusheen Twin Pack :3</h1>
-	    	<div class="uk-alert"><b>RM69</b> Shipping Included</div>
-    		<div class="uk-alert uk-alert-warning">Currently only ship to <b>Malaysia</b>, for other shipment please email to 
-    			<a href="mailto:joevo2@gmail.com?Subject=Pusheen%20Shiping" target="_top">us</a>
-    		</div>
-	    	<div class="uk-grid" >
-	    		<!-- Pusheen panel -->
-		    	<div class="uk-width-medium-3-4">
-		        	<div class="uk-panel">
-		        		<div data-uk-slideshow="{autoplay:true}">
-	                        <ul class="uk-slideshow">
-	                            <li><img src="http://i.imgur.com/0Csi6sm.png" alt=""></li>
-	                            <li><img src="http://i.imgur.com/Gh6qet6.png" alt=""></li>
-	                            <li><img src="http://i.imgur.com/TmxjCiQ.png" alt=""></li>
-	                            <li><img src="http://i.imgur.com/pu0hSna.png" alt=""></li>
-	                            <li><img src="http://i.imgur.com/noJfGQo.png" alt=""></li>
-	                            <li><img src="http://i.imgur.com/4LURvyi.png" alt=""></li>
-	                            <li><img src="http://i.imgur.com/noJfGQo.png" alt=""></li>
-	                        </ul>
-	                        <ul class="uk-grid uk-grid-width-1-6">
-	                            <li><a data-uk-slideshow-item="0"><img src="http://i.imgur.com/0Csi6sm.png"></a></li>
-	                            <li><a data-uk-slideshow-item="1"><img src="http://i.imgur.com/Gh6qet6.png"></a></li>
-	                            <li><a data-uk-slideshow-item="2"><img src="http://i.imgur.com/TmxjCiQ.png"></a></li>
-	                            <li><a data-uk-slideshow-item="3"><img src="http://i.imgur.com/pu0hSna.png"></a></li>
-	                            <li><a data-uk-slideshow-item="4"><img src="http://i.imgur.com/noJfGQo.png"></a></li>
-	                            <li><a data-uk-slideshow-item="5"><img src="http://i.imgur.com/4LURvyi.png"></a></li>
-	                        </ul>
-                    	</div>
-		        	</div>
-		    	</div>
-		    	<!-- Payment panel -->
-		    	<div class="uk-width-medium-1-4">
-		    		<div class="uk-panel">
-		    			<form class="uk-form uk-form-stacked" method="post">
-						    <fieldset data-uk-margin>
-						    	<legend>Get your pusheen now 😄</legend>
-						    	<input type="email" placeholder="Name" name="name" class="uk-width-1-1">
-						        <input type="email" placeholder="Email" name="email" class="uk-width-1-1">
-						        <input type="text" placeholder="Phone Number" name="phone" class="uk-width-1-1">
-						        <textarea cols="" rows="" placeholder="Address" class="uk-width-1-1" name="address"></textarea>
-						        <p class="uk-form-controls-condensed">Pusheen color combination</p>
-						        <div class="uk-button uk-form-select" data-uk-form-select>
-                                    <span></span>
-                                    <i class="uk-icon-caret-down"></i>
-                                    <select>
-                                        <option>Grey</option>
-							            <option>White</option>
-							            <option>Black</option>
-							            <option>Pink</option>
-							            <option>Orange</option>
-                                    </select>
-                                </div>
-                                <div class="uk-button uk-form-select" data-uk-form-select>
-                                    <span></span>
-                                    <i class="uk-icon-caret-down"></i>
-                                    <select>
-                                        <option>Grey</option>
-							            <option>White</option>
-							            <option>Black</option>
-							            <option>Pink</option>
-							            <option>Orange</option>
-                                    </select>
-                                </div>
-						    </fieldset>
-						    <div class="uk-margin">
-						    	<input class="uk-button uk-button uk-button-primary uk-button-large" type="submit" value="Submit">
-							</div>
-						</form>
-		    		</div>
-
-			    	<div class="uk-panel">
-			    		<h3 class="uk-panel-title">Payment</h3>
-			    		<form id="checkout" method="post" action="/checkout">
-						  <div id="dropin"></div>
-						  <input class="uk-button uk-button-primary uk-button-large" type="submit" value="Pay RM69">
-						</form>
+<head>
+	<% include header.ejs %>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/components/slideshow.almost-flat.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/components/form-select.almost-flat.min.css" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/slideshow.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/form-select.min.js"></script>
+</head>
+<body>
+	<% include nav.ejs %>
+	<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+	<div class="uk-alert uk-alert-danger" data-uk-alert>
+		<a href="" class="uk-alert-close uk-close"></a>
+		<p>Work in progress, not open for business yet 😛</p>
+	</div>	
+	<h1>Alpaca Mall</h1>
+	<div class="uk-grid" >
+		<!-- Pusheen panel -->
+		<div class="uk-width-medium-2-4">
+			<div class="uk-panel">
+				<div data-uk-slideshow="{autoplay:true}">
+					<ul class="uk-slideshow">
+						<li><img src="http://i.imgur.com/0Csi6sm.png" alt=""></li>
+						<li><img src="http://i.imgur.com/Gh6qet6.png" alt=""></li>
+						<li><img src="http://i.imgur.com/TmxjCiQ.png" alt=""></li>
+						<li><img src="http://i.imgur.com/pu0hSna.png" alt=""></li>
+						<li><img src="http://i.imgur.com/noJfGQo.png" alt=""></li>
+						<li><img src="http://i.imgur.com/4LURvyi.png" alt=""></li>
+						<li><img src="http://i.imgur.com/noJfGQo.png" alt=""></li>
+					</ul>
+					<ul class="uk-grid uk-grid-small uk-grid-width-1-6">
+						<li><a data-uk-slideshow-item="0"><img src="http://i.imgur.com/0Csi6sm.png"></a></li>
+						<li><a data-uk-slideshow-item="1"><img src="http://i.imgur.com/Gh6qet6.png"></a></li>
+						<li><a data-uk-slideshow-item="2"><img src="http://i.imgur.com/TmxjCiQ.png"></a></li>
+						<li><a data-uk-slideshow-item="3"><img src="http://i.imgur.com/pu0hSna.png"></a></li>
+						<li><a data-uk-slideshow-item="4"><img src="http://i.imgur.com/noJfGQo.png"></a></li>
+						<li><a data-uk-slideshow-item="5"><img src="http://i.imgur.com/4LURvyi.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Details panel -->
+		<div class="uk-width-medium-2-4">
+			<div class="uk-panel">
+				<article class="uk-article">
+					<div class="uk-alert uk-alert-warning">Currently only ship to <b>Malaysia</b>, for other shipment please email to 
+						<a href="mailto:joevo2@gmail.com?Subject=Pusheen%20Shiping" target="_top">us</a>
+					</div>
+					<h1 class="uk-article-title">Pusheen Twin Pack :3</h1>
+					<h1 class="uk-article-title">RM69</h1>
+					<p class="uk-article-meta"><b>Shipping Included</b> - Item should arrived around 2 week</p>
+					<hr class="uk-article-divider">
+					<dl class="uk-description-list-horizontal">
+						<dt>Package include:</dt>
+						<dd>2x Pusheen</dd>
+						<dt>Size:</dt>
+						<dd>40x30cm</dd>
+						<dt>Colors:</dt>
+						<dd>Grey, White, Black, Pink, Orange</dd>
+					</dl>
+				</article>
+			</div>
+			<div class="uk-grid uk-margin-top">
+				<div class="uk-width-1-4">
+					<!-- This is a button toggling the modal -->
+					<button class="uk-margin-top uk-button uk-button-large uk-button-primary" data-uk-modal="{target:'#my-id'}">Buy it now</button>
+					<!-- This is the modal -->
+					<div id="my-id" class="uk-modal">
+					    <div class="uk-modal-dialog">
+					        <a class="uk-modal-close uk-close"></a>
+					        <% include payment.ejs %>
+					    </div>
+					</div>
+				</div>
+				<div class="uk-width-2-4">
+					<div class="uk-panel">
 						<div class="uk-margin-top" data-uk-dropdown>
-						    <button class="uk-button uk-button"><b>RM65</b> Bank Deposit</button>
+						    <button class="uk-button uk-button uk-button-large"><b>RM65</b> Bank Deposit</button>
 						    <div class="uk-dropdown">
 						    	Maybank 114405116181 Joel Yek Zong Yong<br>
 						    	email proof of transaction to 
 						    	<a href="mailto:joevo2@gmail.com?Subject=Pusheen%20Payment" target="_top">joevo2@gmail.com</a>
 						    </div>
 						</div>
-						<script src="https://js.braintreegateway.com/v2/braintree.js"></script>
-						<script>
-						  braintree.setup(
-						    // Replace this with a client token from your server
-						    "eyJ2ZXJzaW9uIjoyLCJhdXRob3JpemF0aW9uRmluZ2VycHJpbnQiOiI5M2MxNjE4YWZmYzNhMzk4OTdlNDQxZDY5MzEyOTVkMGRmOTI4ODNlNmJjNWE5YWFkMmFjOTE5N2ZhMGZiNTQxfGNyZWF0ZWRfYXQ9MjAxNS0wNC0wNlQwODo0NzoyOS43NTI2NzQzMzUrMDAwMFx1MDAyNm1lcmNoYW50X2lkPWRjcHNweTJicndkanIzcW5cdTAwMjZwdWJsaWNfa2V5PTl3d3J6cWszdnIzdDRuYzgiLCJjb25maWdVcmwiOiJodHRwczovL2FwaS5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvZGNwc3B5MmJyd2RqcjNxbi9jbGllbnRfYXBpL3YxL2NvbmZpZ3VyYXRpb24iLCJjaGFsbGVuZ2VzIjpbXSwiY2xpZW50QXBpVXJsIjoiaHR0cHM6Ly9hcGkuc2FuZGJveC5icmFpbnRyZWVnYXRld2F5LmNvbTo0NDMvbWVyY2hhbnRzL2RjcHNweTJicndkanIzcW4vY2xpZW50X2FwaSIsImFzc2V0c1VybCI6Imh0dHBzOi8vYXNzZXRzLmJyYWludHJlZWdhdGV3YXkuY29tIiwiYXV0aFVybCI6Imh0dHBzOi8vYXV0aC52ZW5tby5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tIiwiYW5hbHl0aWNzIjp7InVybCI6Imh0dHBzOi8vY2xpZW50LWFuYWx5dGljcy5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tIn0sInRocmVlRFNlY3VyZUVuYWJsZWQiOnRydWUsInRocmVlRFNlY3VyZSI6eyJsb29rdXBVcmwiOiJodHRwczovL2FwaS5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvZGNwc3B5MmJyd2RqcjNxbi90aHJlZV9kX3NlY3VyZS9sb29rdXAifSwicGF5cGFsRW5hYmxlZCI6dHJ1ZSwicGF5cGFsIjp7ImRpc3BsYXlOYW1lIjoiQWNtZSBXaWRnZXRzLCBMdGQuIChTYW5kYm94KSIsImNsaWVudElkIjpudWxsLCJwcml2YWN5VXJsIjoiaHR0cDovL2V4YW1wbGUuY29tL3BwIiwidXNlckFncmVlbWVudFVybCI6Imh0dHA6Ly9leGFtcGxlLmNvbS90b3MiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hc3NldHMuYnJhaW50cmVlZ2F0ZXdheS5jb20iLCJhc3NldHNVcmwiOiJodHRwczovL2NoZWNrb3V0LnBheXBhbC5jb20iLCJkaXJlY3RCYXNlVXJsIjpudWxsLCJhbGxvd0h0dHAiOnRydWUsImVudmlyb25tZW50Tm9OZXR3b3JrIjp0cnVlLCJlbnZpcm9ubWVudCI6Im9mZmxpbmUiLCJ1bnZldHRlZE1lcmNoYW50IjpmYWxzZSwiYnJhaW50cmVlQ2xpZW50SWQiOiJtYXN0ZXJjbGllbnQiLCJtZXJjaGFudEFjY291bnRJZCI6InN0Y2gybmZkZndzenl0dzUiLCJjdXJyZW5jeUlzb0NvZGUiOiJVU0QifSwiY29pbmJhc2VFbmFibGVkIjp0cnVlLCJjb2luYmFzZSI6eyJjbGllbnRJZCI6IjExZDI3MjI5YmE1OGI1NmQ3ZTNjMDFhMDUyN2Y0ZDViNDQ2ZDRmNjg0ODE3Y2I2MjNkMjU1YjU3M2FkZGM1OWIiLCJtZXJjaGFudEFjY291bnQiOiJjb2luYmFzZS1kZXZlbG9wbWVudC1tZXJjaGFudEBnZXRicmFpbnRyZWUuY29tIiwic2NvcGVzIjoiYXV0aG9yaXphdGlvbnM6YnJhaW50cmVlIHVzZXIiLCJyZWRpcmVjdFVybCI6Imh0dHBzOi8vYXNzZXRzLmJyYWludHJlZWdhdGV3YXkuY29tL2NvaW5iYXNlL29hdXRoL3JlZGlyZWN0LWxhbmRpbmcuaHRtbCJ9LCJtZXJjaGFudElkIjoiZGNwc3B5MmJyd2RqcjNxbiIsInZlbm1vIjoib2ZmbGluZSIsImFwcGxlUGF5Ijp7InN0YXR1cyI6Im1vY2siLCJjb3VudHJ5Q29kZSI6IlVTIiwiY3VycmVuY3lDb2RlIjoiVVNEIiwibWVyY2hhbnRJZGVudGlmaWVyIjoibWVyY2hhbnQuY29tLmJyYWludHJlZXBheW1lbnRzLmRldi1kY29wZWxhbmQiLCJzdXBwb3J0ZWROZXR3b3JrcyI6WyJ2aXNhIiwibWFzdGVyY2FyZCIsImFtZXgiXX19",
-						    'dropin', {
-						      container: 'dropin'
-						    });
-						</script>
-			    	</div>
-			    </div>
-		    </div>
-		    <!-- Details panel -->
-		    	<div class="uk-width-medium-1-1">
-		    		<div class="uk-panel">
-		        		<article class="uk-article">
-						    <h1 class="uk-article-lead">Details</h1>
-						    <p class="uk-article-meta">Shipping should take around 2 weeks</p>
-						    <dl class="uk-description-list-line">
-							    <dt>Package include:</dt>
-							    <dd>2x Pusheen</dd>
-							    <dt>Size:</dt>
-							    <dd>40x30cm</dd>
-							    <dt>Colors:</dt>
-							    <dd>Grey, White, Black, Pink, Orange</dd>
-							</dl>
-						</article>
-		        	</div>
-		    	</div>
-		</div>
-    </body>
+					</div>
+				</div>
+			</div>
+		</div>  <!-- End of Detail pane -->
+	</div>
+</body>
 </html>
