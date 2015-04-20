@@ -1,16 +1,16 @@
 //Monitoring
 require('newrelic');
 
+var compression = require('compression');
 var express =  require('express');
-var compression = require('compression')
 var braintree = require("braintree");
 var app = express();
 
-require('./router/main')(app);
-require('./controllers/form')(app);
-
 // compress all requests
 app.use(compression());
+
+require('./router/main')(app);
+require('./controllers/form')(app);
 
 //This is required for deployment in Heroku
 app.set('port', (process.env.PORT || 3000));
