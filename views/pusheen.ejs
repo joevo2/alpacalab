@@ -44,16 +44,7 @@
 					<h1 class="uk-article-title">Pusheen Plush Toy</h1>
 					<h2 class="uk-margin-remove">RM69 - Twin Pack</h2>
 					<h2 class="uk-margin-remove">RM49 - Single Pack</h2>
-					<div class="uk-panel uk-margin-remove">
-						<div class="uk-margin-top" data-uk-dropdown>
-							<button class="uk-button uk-button-primary"><b>RM65/RM45</b> Bank Deposit</button>
-							<div class="uk-dropdown uk-margin-bottom">
-								Maybank 114405116181 Joel Yek Zong Yong<br>
-								email proof of transaction to 
-								<a href="mailto:joevo2@gmail.com?Subject=Pusheen%20Payment" target="_top">joevo2@gmail.com</a>
-							</div>
-						</div>	
-					</div>
+					<button class="uk-button uk-button-large uk-margin-top"><b>RM65/RM45</b> Bank Deposit</button>
 					<p class="uk-article-meta"><b>Shipping Included</b> - Item should arrived in 2 week</p>
 					<div class="uk-alert uk-alert-warning">Currently only ship to <b>Malaysia</b>, for other shipment please email to 
 						<a href="mailto:joevo2@gmail.com?Subject=Pusheen%20Shiping" target="_top">us</a>
@@ -69,7 +60,7 @@
 					</dl>
 				</article>
 				<div class="uk-button-group uk-margin uk-panel uk-panel-box" data-uk-button-radio>
-					<h4>Choose your pusheen pack</h4>
+					<h4 class="uk-panel-title">Choose your pusheen pack</h4>
 					<br>
 				    <button class="uk-button">Twin Pack</button>
 				    <button class="uk-button">Single Pack</button>
@@ -77,15 +68,26 @@
 			</div>
 			<div class="uk-margin" data-uk-dropdown>
 				<!-- This is a button toggling the modal -->
-				<button class="uk-button uk-button-large uk-button-primary" data-uk-modal="{target:'#my-id'}">Buy it now</button>
-				<button class="uk-button uk-button-large">Bank Deposit</button>
+				<button class="uk-button uk-button-large uk-button-primary" data-uk-modal="{target:'#payment'}">Buy it now</button>
+				<button class="uk-button uk-button-large" data-uk-modal="{target:'#bank', center:true}">Bank Deposit</button>
 			</div>
-			
-			<!-- This is the modal -->
-			<div id="my-id" class="uk-modal">
+			<!-- payment modal -->
+			<div id="payment" class="uk-modal">
 				<div class="uk-modal-dialog">
 					<a class="uk-modal-close uk-close"></a>
 					<% include payment.ejs %>
+				</div>
+			</div>
+			<!-- bank modal -->
+			<div id="bank" class="uk-modal">
+				<div class="uk-modal-dialog">
+					<a class="uk-modal-close uk-close"></a>
+					<div class="uk-modal-header">
+						<h2>Bank Deposit</h2>
+					</div>
+			        Maybank 114405116181 Joel Yek Zong Yong<br>
+					email proof of transaction to 
+					<a href="mailto:joevo2@gmail.com?Subject=Pusheen%20Payment%20[Order%20Number:XXX]" target="_top">joevo2@gmail.com</a>      
 				</div>
 			</div>
 		</div>  <!-- End of Detail pane -->
