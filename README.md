@@ -1,6 +1,6 @@
-# alpacalab
+# Alpacalab
 
-The main site of Alpaca Lab 
+The main site of Alpaca Lab
 
 Component
 ---------
@@ -8,3 +8,4 @@ Component
 - ExpressJS
 - EJS
 - [UIKit](http://getuikit.com/docs/base.html)
+- Hosted on Heroku
